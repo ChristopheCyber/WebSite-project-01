@@ -35,6 +35,26 @@ body{
 section{
 	margin: 0 5% 0 5%;
 }
+section>section{
+	width: 65%;
+	margin: 0 1% 0 0%;
+}
+section,aside,footer{
+	display: flex;
+}
+a{
+	color: red;
+}
+p{
+	text-align: left;
+}
+aside p{
+	margin: 5%;
+	text-align: justify;
+}
+/*-----------------------------------------------------*/
+/* Header
+/*-----------------------------------------------------*/
 header{
 	background-color: rgb(254, 247, 218);/* background-color: #fef7da; */
 	height: 150px;
@@ -72,10 +92,19 @@ header>div{
 	margin-left: 5%;
 	width: 18%;
 }
-section>section{
-	width: 65%;
-	margin: 0 1% 0 0%;
+header ul{
+	display: flex;
+	flex-direction: row;
+	width:30%;
+	justify-content: space-around;	
+	list-style: none;
 }
+header a{
+	font-weight: bold;
+}
+/*-----------------------------------------------------*/
+/* Header Nav
+/*-----------------------------------------------------*/
 nav{
 	font-size: 25px;
 	font-weight: bold;
@@ -93,36 +122,19 @@ nav ul{
 nav li{
 	margin-left: 20px;
 }
-a{
-	color: red;
-}
-p{
-	text-align: left;
-}
-aside p{
-	margin: 5%;
-	text-align: justify;
-}
+
 nav>ul>li>a{
 	text-decoration: none;
 	color: black;
 }
+nav a:hover
+{
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
 nav>ul>li:nth-child(1)>a{
 	color: red;
 	border-bottom: 4px solid;
-}
-section,aside,footer{
-	display: flex;
-}
-header ul{
-	display: flex;
-	flex-direction: row;
-	width:30%;
-	justify-content: space-around;	
-	list-style: none;
-}
-header a{
-	font-weight: bold;
 }
 /*-----------------------------------------------------*/
 /* Banner / Banniere 
@@ -242,12 +254,17 @@ footer{
 	background-color: rgb(255, 246, 218);/* background-color: #fff6da; */
 	justify-content: space-between;
 	border-top: 15px solid transparent;
-	/* border-image: url(images/border1.jpg) 60 round; */
+  	/* -- bordure transition -- */
+  	/*---- methode prof :       */
+  	/* background: url('images/separateur.png') repeat-x top; */
+  	/* ------------------------ */
+  	/*---- methode 'slice' :    */
 	border-image-source: url(images/border-image-square-3b.jpg);
   	border-image-slice: 10 5 5 0;
   	border-image-width: .12 1 1 1;
   	border-image-repeat: round;
   	border-image-outset: 0.2;
+	/* border-image: url(images/border1.jpg) 60 round; */
 }
 footer>div{
 	/*background-color: blue;*/
@@ -283,6 +300,9 @@ footer>div>div>ul>li span{
 	color: red;
 	margin-left: 2px;
 }
+/*-----------------------------------------------------*/
+/* Others
+/*-----------------------------------------------------*/
 .img-photo{
 	width: 140px;
 	height: 115px;
