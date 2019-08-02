@@ -1,3 +1,6 @@
+/*-----------------------------------------------------*/
+/* Fonts / Polices
+/*-----------------------------------------------------*/
 /* *** Chargement nouvelle police 'RECHTMANplain' *** */
 @font-face {
     font-family: 'rechtmanplain';
@@ -10,9 +13,11 @@
     font-weight: normal;
     font-style: normal;
 }
-/* *** GENERAL *** */
-*{ /* All texts */
-	font-family:Verdana,Comic Sans MS,Trebuchet MS,Arial;
+/*-----------------------------------------------------*/
+/* General
+/*-----------------------------------------------------*/
+*{/* All texts */
+	font-family:Verdana,'Comic Sans MS','Trebuchet MS',Arial;
 }
 h2, section h1, section p {
 	color: rgba(0,0,0,.7);
@@ -23,11 +28,6 @@ ul {
 }
 #BlockPage{
 	min-height: 150px;
-}
-#banniere{
-	display: flex;
-	flex-direction: column;
-	margin: 20px 5% 0 5%;
 }
 body{
 	background-color: rgb(247, 234, 204);/* background-color: #f7eacc; */
@@ -97,10 +97,11 @@ a{
 	color: red;
 }
 p{
-	text-align: auto;
+	text-align: left;
 }
 aside p{
 	margin: 5%;
+	text-align: justify;
 }
 nav>ul>li>a{
 	text-decoration: none;
@@ -123,6 +124,44 @@ header ul{
 header a{
 	font-weight: bold;
 }
+/*-----------------------------------------------------*/
+/* Banner / Banniere 
+/*-----------------------------------------------------*/
+#banniere{
+	display: flex;
+	flex-direction: column;
+	margin: 20px 5% 0 5%;
+}
+.img-banniere{
+	height: 180px;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+.ClassBann{
+	border-bottom: 1px solid rgba(0,0,0,.6);
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	color: rgba(255,255,255,.6);
+	font-weight: bold;
+	font-size: 15px;
+	height: 40px;
+	width: 100%;
+	background-color: rgba(0,0,0,.6);
+	position: relative;
+	top: -42px;
+}
+.BannBox1{
+	display: inline-block;
+	margin-left: 8px;
+	margin-top:10px;
+}
+.BannBouton{
+	height: 28px;
+	margin: 6px 8px 2px 0;
+}
+/*-----------------------------------------------------*/
+/* Aside / Complement infos
+/*-----------------------------------------------------*/
 aside{
 	background-color: rgba(111,106,100,1);
 	border: 1px solid rgba(111,106,100,1);
@@ -196,6 +235,9 @@ aside h2{
 	bottom: -28px;
 	left: -44%;
 }
+/*-----------------------------------------------------*/
+/* Footer / Pied de page
+/*-----------------------------------------------------*/
 footer{
 	background-color: rgb(255, 246, 218);/* background-color: #fff6da; */
 	justify-content: space-between;
@@ -241,24 +283,6 @@ footer>div>div>ul>li span{
 	color: red;
 	margin-left: 2px;
 }
-.img-banniere{
-	height: 180px;
-	border: 1px solid black;
-	border-radius: 10px;
-}
-.ClassBann{
-	border-bottom: 1px solid rgba(0,0,0,.6);
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-	color: rgba(255,255,255,.6);
-	font-weight: bold;
-	font-size: 15px;
-	height: 40px;
-	width: 100%;
-	background-color: rgba(0,0,0,.6);
-	position: relative;
-	top: -42px;
-}
 .img-photo{
 	width: 140px;
 	height: 115px;
@@ -277,15 +301,6 @@ footer>div>div>ul>li span{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-}
-.BannBox1{
-	display: inline-block;
-	margin-left: 8px;
-	margin-top:10px;
-}
-.BannBouton{
-	height: 28px;
-	margin: 6px 8px 2px 0;
 }
 .DflexCol{
 	display: flex;
