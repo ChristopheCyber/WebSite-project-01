@@ -1,0 +1,223 @@
+/*----------------------------------------------------------------*/
+/* *** Chargement nouvelles polices : 'RECHTMANplain' 
+/*----------------------------------------------------------------*/
+@font-face {
+    font-family: 'rechtmanplain';
+    src: url('WebFontsTP/RechtmanPlain-webfont.eot');
+    src: url('WebFontsTP/RechtmanPlain-webfont.eot?#iefix') format('embedded-opentype'),
+         url('WebFontsTP/RechtmanPlain-webfont.woff2') format('woff2'),
+         url('WebFontsTP/RechtmanPlain-webfont.woff') format('woff'),
+         url('WebFontsTP/RechtmanPlain-webfont.ttf') format('truetype'),
+         url('WebFontsTP/RechtmanPlain-webfont.svg#rechtmanplain') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*----------------------------------------------------------------*/
+/* *** GENERAL 
+/*----------------------------------------------------------------*/
+/* All */
+*{
+	font-family:Verdana,Comic Sans MS,Trebuchet MS,Arial;
+	text-align: justify;
+}
+/* Toute la page */
+body{
+	margin-left: 1%;
+	margin-right:1%;		
+  	color:yellow;
+  	font-weight:normal;
+	opacity:1 ;
+	background: url("imagesTP/Alfbond.jpg") fixed top left;
+}
+/* Paragraphes */
+p{
+	text-shadow: 1px 1px 0px red;  	
+}
+/* Liens http */
+a{
+	color:red;
+	text-decoration: none;
+	text-shadow: 1px 1px 0px yellow;  	
+}
+/* liens deja visites*/
+a:visited{
+	color:blue;
+	border: 1px solid green;
+}
+a:hover{
+	color:green;
+	font-weight: bold;
+	background-color:yellow;
+	text-decoration: underline red;
+}
+img:hover{
+	border: 9px solid yellow; /* rgb(77, 255, 77); */
+    padding: 0px;
+}
+mark{
+	background-color: rgba(0,0,255,0);
+	color: red;
+	font-weight: bold;
+}
+mark:hover{
+	color:green;
+	background-color:yellow;
+	opacity:1;
+	font-weight: bold;
+	text-decoration: underline;
+}
+/* Listes Puces */
+ul,ol{
+	list-style-position: inside;
+}
+/* Titre principal */
+h1{
+	font-family: Rechtmanplain,'Times New Roman',Verdana,Arial;
+	color:rgb(255, 0, 102);
+	font-size: 70px;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 4px 4px 0px rgb(77, 255, 77);
+	text-decoration: underline overline rgb(0, 179, 0);
+	border: 6px solid red;
+    padding: 6px;
+    box-shadow: 10px 10px 0px rgb(0, 179, 0); 
+    border-radius: 50px;
+    margin:auto;
+    width: 70%;
+}
+/* Sous-titres h2 */
+h2{
+	font-family: Verdana,'Times New Roman',Arial;
+	color:rgb(77, 255, 77);
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 7px 4px 0px red;
+	border: 3px solid rgb(77, 255, 77);
+    padding: 5px;
+    box-shadow: 5px 5px rgb(0, 179, 0);
+    border-radius: 30px;
+    margin:auto;
+    width: 50%;
+}
+/* Sous-titres h3 */
+h3{
+opacity: .8;
+}
+/* blocks */
+div{
+	text-align: center;
+	font-size: small; /* 25px 110% large small x-large xx-large x-small xx-small medium 1.5em 0.8em */
+	font-style: italic; 
+}
+/* Sous-titres h3, image */
+h3,figure,figcaption{
+	text-align: center;
+}
+/* ajustement des zones et des mises en evidence */
+span,em{
+	margin:auto;
+}
+/* mises en evidence fortes*/
+strong{
+	color:rgb(77, 255, 77);
+	text-decoration: underline;
+}
+/* mise en evidence em dans les Sous-titres h3 */
+h3 em{
+	font-weight: bold;
+}
+/*----------------------------------------------------------------*/
+/* *** Liseré
+/*----------------------------------------------------------------*/
+/* Id Liseré gauche */
+#idLisere{
+	width: 14%;
+	height: 1000px;
+	margin-left: 1%;
+	margin-right:1%;	
+	border: 2px double lightblue;
+	border-radius: 10px;
+  	padding: 2px;	
+	opacity:.8 ;
+	background: url("imagesTP/AlfGunMin.jpg") scroll top left;
+}
+/*----------------------------------------------------------------*/
+/* *** Section Principale
+/*----------------------------------------------------------------*/
+section>div:nth-of-type(2)>div{
+	font-size: small;
+	text-shadow: 2px 3px 2px red;
+	border: 2px solid rgb(77, 255, 77);
+    padding: 5px;
+    box-shadow: 3px 3px rgb(0, 179, 0);
+    border-radius: 30px;
+    /*margin:auto;*/
+    margin: 3% 0 5% 0;
+    width: 30%;
+    height:100%;
+    background-color: rgba(100,200,100,0.2);
+}
+/* Id Section Principale */
+#idSecPrinc{
+	display: flex;
+	width: 90%;
+	margin-left: 1%;
+	margin-right:1%;	
+	border: 50px double rgb(0, 179, 0);
+	border-left: 15px double rgb(0, 179, 0);
+	border-top: 15px double rgb(0, 179, 0);
+	border-radius: 100px;
+  	padding: 10px;	
+	opacity:1 ;
+	background: 
+				url("imagesTP/AlfBond1mini.jpg") no-repeat top left 0%,
+				url("imagesTP/AlfBond2mini.jpg") no-repeat top right 0%,
+				url("imagesTP/Alfbond.jpg") fixed top left;
+}
+/*----------------------------------------------------------------*/
+/* *** SPECIAL CLASSES OR IDS 
+/*----------------------------------------------------------------*/
+ /* Id used once per page */
+#idLightblueItal{
+	color:blue;
+	font-style: italic; 
+}
+.FlexRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.FlexCol{
+    display: flex;
+    flex-direction: column;
+}
+/* Class for blue text */
+.classTXTblue{
+	color:blue; 
+	font-style: italic; 
+	text-decoration: underline overline wavy;
+}
+ /* Class for red text */
+.classTXTred{
+	color:red; 
+}
+ /* Class for tiny box inline*/
+.classBoxInline{
+	font-weight: bold;
+	border: 2px solid red;
+    padding: 3px;
+    box-shadow: 2px 4px red;
+    border-radius: 100px;
+}
+ /* Class for red text */
+.classMark{
+	background:rgba(102, 179, 255,.5);
+}
+ /* Class for red text */
+.classImg1{
+	border: 4px solid red;
+	border-radius: 25px;
+    padding: 0px;
+    box-shadow: 10px 10px 10px rgb(255, 0, 0); 
+}
